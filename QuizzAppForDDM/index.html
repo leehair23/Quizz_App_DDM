@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Quizz App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>WPR</h1>
+      <div id="MERN-stack">
+        <p>M</p>
+        <p>E</p>
+        <p>R</p>
+        <p>N</p>
+      </div>
+    </div>
+
+    <div class="quiz-image">
+      <p id="html-quiz">HTML Quiz</p>
+    </div>
+
+    <p class="author">By Do Duc Manh</p>
+
+    <div class="description">
+      <h2>The Test </h2>
+      <p>The test contains 10 questions and there is no time limit.</p>
+      <p>The test is not official, it's just a nice way to see how much you know, or don't know about HTML.</p>
+      <h2>Count Your Score</h2>
+      <p>You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed.
+        Maximum score is 10 points.</p>
+    </div>
+
+    <div class="game-panel">
+      <h2>Start the quiz</h2>
+      <p>Good luck!</p>
+      <button id="start-btn">Start the HTML quiz <i class="fas fa-greater-than fa-sm"></i></button>
+    </div>
+
+    <div class="question-block">
+      <div class="question-container">
+        <h2>Question <span id="question-number">1</span> of 10</h2>
+        <p id="questions">Question 1?</p>
+        <form id="option-container">
+          <label for="option_1">
+            <input type="radio" name="option" id="option_1">option 1
+          </label>
+          <label for="option_2">
+            <input type="radio" name="option" id="option_2">option 2
+            <p class="badge-right">Correct answer</p>
+          </label>
+          <label for="option_3">
+            <input type="radio" name="option" id="option_3">option 3
+            <p class="badge-wrong">Your answer</p>
+          </label>
+          <label for="option_4">
+            <input type="radio" name="option" id="option_4">option 4
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="submission">
+      <button id="submit-btn" type="submit">Submit your answers <i class="fas fa-greater-than fa-sm"></i></button>
+    </div>
+
+    <div class="result">
+      <h2>Result : </h2>
+      <h4 id="correct-answers">1/10</h4>
+      <p id="correct-percentage">10%</p>
+      <p id="advices">Practice more to improve it :D</p>
+      <button id="try-again">Try Again</button>
+    </div>
+
+  </div>
+</body>
+
+</html>
